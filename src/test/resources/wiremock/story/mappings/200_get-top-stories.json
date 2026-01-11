@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty"
+  },
+  "response": {
+    "status": 200,
+    "body": "[ 46564696, 46565132 ]",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

@@ -32,6 +32,7 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-webmvc-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testImplementation("com.h2database:h2")
+	testImplementation("org.wiremock.integrations:wiremock-spring-boot:4.0.8")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
