@@ -4,7 +4,7 @@ data class StoryDTO(
     val by: String,
     val descendants: Int,
     val id: Long,
-    val kids: List<Int> = emptyList(),
+    val kids: List<Long> = emptyList(),
     val score: Int,
     val time: Long,
     val title: String,

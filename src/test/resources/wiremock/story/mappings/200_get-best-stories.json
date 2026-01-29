@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "GET",
-    "url": "https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty"
+    "url": "/beststories.json"
   },
   "response": {
     "status": 200,

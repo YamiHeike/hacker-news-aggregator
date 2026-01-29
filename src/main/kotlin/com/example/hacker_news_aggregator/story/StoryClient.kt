@@ -7,9 +7,9 @@ import org.springframework.web.service.annotation.HttpExchange
 @HttpExchange
 interface StoryClient {
     @GetExchange("/newstories.json")
-    fun getNewStories(): List<Int>
+    fun getNewStories(): List<Long>
     @GetExchange("/beststories.json")
-    fun getBestStories(): List<Int>
+    fun getBestStories(): List<Long>
     @GetExchange("/item/{id}.json")
-    fun getStory(@PathVariable id: Int): StoryDTO
+    fun getStory(@PathVariable id: Long): StoryDTO?
 }
