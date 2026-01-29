@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/beststories.json"
+  },
+  "response": {
+    "status": 200,
+    "body": "[ 46564696, 46565132 ]",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

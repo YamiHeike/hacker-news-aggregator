@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/item/46565132.json"
+  },
+  "response": {
+    "status": 200,
+    "body": "{\n  \"by\" : \"skadamat\",\n  \"descendants\" : 185,\n  \"id\" : 46565132,\n  \"kids\" : [ 46565679, 46565375, 46565462 ],\n  \"score\" : 467,\n  \"time\" : 1768047800,\n  \"title\" : \"Eulogy for Dark Sky, a data visualization masterpiece (2023)\",\n  \"type\" : \"story\",\n  \"url\" : \"https://nightingaledvs.com/dark-sky-weather-data-viz/\"\n}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

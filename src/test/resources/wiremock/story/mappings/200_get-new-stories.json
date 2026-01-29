@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/newstories.json"
+  },
+  "response": {
+    "status": 200,
+    "body": "[ 46817564,46817511 ]",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
