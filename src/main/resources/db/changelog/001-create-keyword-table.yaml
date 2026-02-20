@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001-create-keyword-table
+      author: YamiHeike
+      changes:
+        - createTable:
+            tableName: keyword
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: word
+                  type: varchar(255)

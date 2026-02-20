@@ -26,13 +26,17 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-webmvc")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("tools.jackson.module:jackson-module-kotlin")
-	runtimeOnly("org.postgresql:postgresql")
+	implementation("org.liquibase:liquibase-core")
+	implementation("org.postgresql:postgresql")
 	testImplementation("org.springframework.boot:spring-boot-starter-data-jpa-test")
 	testImplementation("org.springframework.boot:spring-boot-starter-restclient-test")
 	testImplementation("org.springframework.boot:spring-boot-starter-webmvc-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testImplementation("com.h2database:h2")
 	testImplementation("org.wiremock.integrations:wiremock-spring-boot:4.0.8")
+	testImplementation("org.testcontainers:postgresql:1.20.3")
+	testImplementation("org.testcontainers:junit-jupiter:1.20.3")
+	testImplementation("org.springframework.boot:spring-boot-testcontainers")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
@@ -53,7 +57,6 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach 
 		jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_24)
 		freeCompilerArgs.addAll(listOf(
 			"-Xjsr305=strict",
-			"-Xannotation-default-target=param-property"
 		))
 	}
 }
